@@ -1,0 +1,30 @@
+{
+  "name": "api-products",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".src/server.ts",
+  "scripts": {
+    "db:reset": "npx -y tsc && npx sequelize-cli db:drop && npx sequelize-cli db:create",
+    "start": "node src/server.ts",
+    "dev": "nodemon src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "10.0",
+    "express": "4.17",
+    "sequelize": "6.3"
+  },
+  "devDependencies": {
+    "@types/express": "4.17",
+    "@types/node": "16.11",
+    "@types/sequelize": "4.28",
+    "mysql2": "2.3",
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "6.2",
+    "ts-node": "10.4",
+    "typescript": "4.4"
+  }
+}
