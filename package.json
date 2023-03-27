@@ -4,7 +4,7 @@
   "description": "",
   "main": ".src/server.ts",
   "scripts": {
-    "db:reset": "npx -y tsc && npx sequelize-cli db:drop && npx sequelize-cli db:create",
+    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "start": "node src/server.ts",
     "dev": "nodemon src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,9 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jsonwebtoken": "^9.0.1",
     "dotenv": "10.0",
     "express": "4.17",
-    "sequelize": "6.3"
+    "joi": "^17.9.1",
+    "sequelize": "6.25.5"
   },
   "devDependencies": {
     "@types/express": "4.17",

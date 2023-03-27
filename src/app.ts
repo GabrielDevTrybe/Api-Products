@@ -1,6 +1,5 @@
 // import 'express-async-errors';
-import express from 'express';
-// import teamRouter from './api/routes/TeamRoutes';
+import * as express from 'express';// import teamRouter from './api/routes/TeamRoutes';
 // import loginRouter from './api/routes/LoginRouter';
 // import matchRouter from './api/routes/MatchRoutes';
 // import leaderboardRouter from './api/routes/LeaderBoardRoutes';
